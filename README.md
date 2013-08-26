@@ -35,3 +35,15 @@
 ### user
 * firstName
 * lastName
+
+```
+[
+ '{{repeat(100)}}',
+ {
+  id: '{{index}}',
+  firstName: '{{firstName}}',
+  lastName: '{{surname}}',
+  position: '{{numeric(20,40)}}'
+ }
+]
+```
