@@ -1,0 +1,1 @@
+window.Draft = Ember.Application.create();
