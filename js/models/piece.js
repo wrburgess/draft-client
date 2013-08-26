@@ -4,7 +4,7 @@ Pieces.Draft = DS.Model.extend({
   position: DS.attr('string')
 });
 
-Drafts.Draft.FIXTURES = 
+Pieces.Draft.FIXTURES = 
 [
 {
   "id": 1,

@@ -4,7 +4,6 @@ Rosters.Draft = DS.Model.extend({
   state: DS.attr('string')
 });
 
-
 Rosters.Draft.FIXTURES = 
 [
 {

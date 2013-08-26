@@ -35,6 +35,7 @@
 ### user
 * firstName
 * lastName
+* role
 
 ```
 [
