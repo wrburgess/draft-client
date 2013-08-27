@@ -1,40 +1,40 @@
 Draft.Router.map(function () {
-  this.resource('draft', { path: '/' });
+  this.resource('sessions', { path: '/' });
 });
 
-Drafts.DraftsRoute = Ember.Route.extend({
+Draft.SessionsRoute = Ember.Route.extend({
   model: function () {
-    return Drafts.Draft.find();
+    return Draft.Session.find();
   }
 });
 
-Rosters.RostersRoute = Ember.Route.extend({
+Draft.RostersRoute = Ember.Route.extend({
   model: function () {
-    return Rosters.Draft.find();
+    return Draft.Roster.find();
   }
 });
 
-Slots.SlotsRoute = Ember.Route.extend({
+Draft.SlotsRoute = Ember.Route.extend({
   model: function () {
-    return Slots.Draft.find();
+    return Draft.Slot.find();
   }
 });
 
-Picks.PicksRoute = Ember.Route.extend({
+Draft.PicksRoute = Ember.Route.extend({
   model: function () {
-    return Picks.Draft.find();
+    return Draft.Pick.find();
   }
 });
 
-Pieces.PiecesRoute = Ember.Route.extend({
+Draft.PiecesRoute = Ember.Route.extend({
   model: function () {
-    return Pieces.Draft.find();
+    return Draft.Piece.find();
   }
 });
 
-Users.UsersRoute = Ember.Route.extend({
+Draft.UsersRoute = Ember.Route.extend({
   model: function () {
-    return Users.Draft.find();
+    return Draft.User.find();
   }
 });
 

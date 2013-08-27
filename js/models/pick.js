@@ -1,4 +1,4 @@
-Picks.Draft = DS.Model.extend({
+Draft.Pick = DS.Model.extend({
   draftId: DS.attr('integer'),
   rosterId: DS.attr('integer'),
   pieceId: DS.attr('integer'),
@@ -7,7 +7,7 @@ Picks.Draft = DS.Model.extend({
   state: DS.attr('string')
 });
 
-Picks.Draft.FIXTURES = 
+Draft.Pick.FIXTURES = 
 [
 {
   "id": 1,

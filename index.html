@@ -8,28 +8,36 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <p>This is the index page content</p>
-
     <script type="text/x-handlebars" data-template-name="application">
       <header>
         <h1>This is a title in the header</h1>
       </header>
 
+      {{outlet}}
+      
       <footer>
         <p>This is the footer</p>
       </footer>
     </script>
 
-    <script type="text/x-handlebars" data-template-name="draft">
-      <p>This is the draft template</p>
+    <script type="text/x-handlebars" data-template-name="sessions">
+      <ul id="session-index">
+        {{#each controller}}
+          <li>
+            <label>{{name}}</label>
+          </li>
+        {{/each}}
+      </ul>
     </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.0.0-rc.3/handlebars.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/ember.js/1.0.0-rc.6/ember.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ember-data.js/0.13.0/ember-data-latest.min.js"></script>
     <script src="js/application.js"></script>
     <script src="js/router.js"></script>
-    <script src="js/models/draft.js"></script>
+    <script src="js/models/store.js"></script>
+    <script src="js/models/session.js"></script>
     <script src="js/models/pick.js"></script>
     <script src="js/models/roster.js"></script>
     <script src="js/models/slot.js"></script>

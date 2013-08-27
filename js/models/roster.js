@@ -1,10 +1,10 @@
-Rosters.Draft = DS.Model.extend({
+Draft.Roster = DS.Model.extend({
   name: DS.attr('string'),
   userId: DS.attr('integer'),
   state: DS.attr('string')
 });
 
-Rosters.Draft.FIXTURES = 
+Draft.Roster.FIXTURES = 
 [
 {
   "id": 1,

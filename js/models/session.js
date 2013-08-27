@@ -1,4 +1,4 @@
-Drafts.Draft = DS.Model.extend({
+Draft.Session = DS.Model.extend({
   name: DS.attr('string'),
   season: DS.attr('integer'),
   roundsCount: DS.attr('integer'),
@@ -6,7 +6,7 @@ Drafts.Draft = DS.Model.extend({
   state: DS.attr('string')
 });
 
-Drafts.Draft.FIXTURES = 
+Draft.Session.FIXTURES = 
 [
 {
   "id": 1,

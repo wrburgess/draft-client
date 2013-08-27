@@ -1,9 +1,9 @@
-Users.Draft = DS.Model.extend({
+Draft.Users = DS.Model.extend({
   firstName: DS.attr('string'),
   lastName: DS.attr('string')
 });
 
-Users.Draft.FIXTURES = 
+Draft.Users.FIXTURES = 
 [
 {
   "id": 1,

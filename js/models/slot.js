@@ -1,11 +1,10 @@
-Slots.Draft = DS.Model.extend({
+Draft.Slot = DS.Model.extend({
   rosterID: DS.attr('integer'),
   name: DS.attr('string'),
   weight: DS.attr('integer')
 });
 
-
-Slots.Draft.FIXTURES = 
+Draft.Slot.FIXTURES = 
 [
 {
 "id": 1,
